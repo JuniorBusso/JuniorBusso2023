@@ -1,0 +1,144 @@
+body{
+    background-color: rgb(102, 146, 228);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    height: 100vh;
+}
+
+.imagen{
+    flex: 1;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.signup-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 40px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.login-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 40px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#titulo_signup{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    justify-content: left;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    font-size: 80px;
+}
+
+#titulo_login{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    justify-content: left;
+    margin-top: 150px;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    font-size: 80px;
+}
+
+label{
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+form{
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+#name,
+#lastname,
+#email,
+#password{
+    display: inline-block;
+    width: 500px;
+    outline: none;
+    margin-bottom: 2.5px;
+    border: 1px solid;
+    border-color: white;
+    padding: 10px;
+    border-bottom: 1px solid silver;
+}
+
+#password{
+    margin-bottom: 10px;
+}
+
+a{
+    color: rgb(82, 64, 64);
+}
+
+.boton{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: 0px;
+    padding: 7px;
+    margin-top: 20px;
+    width: 30%;
+    height: 50px;
+    background-color: rgb(189, 136, 136);
+    cursor: pointer;
+    color:rgb(255, 255, 255) ;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#footer_signup{
+    margin-top: 210px;
+    width:100%;
+}
+
+#footer_login{
+    margin-top: 300px;
+    width: 100%;
+}
+
+::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.boton:hover{
+    background-color: rgb(206, 153, 153);
+    color:rgb(236, 255, 228);
+    padding: 10px;
+    box-shadow: 3px 7px 25px rgb(173, 167, 167);   
+}
+
+@media(max-width: 1000px) {
+    .imagen{
+        display: none;
+    }
+    .signup-container, .login-container{
+        flex: 1;
+    }
+}
